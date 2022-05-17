@@ -175,6 +175,14 @@ When `TINYCOLORMAP_WITH_GLM` is defined before including `tinycolormap.hpp`, for
 const glm::vec3 color = tinycolormap::GetColor(x).ConvertToGLM();
 ```
 
+### CUDA Kernel
+To use colormap functions inside your cuda kernel, just include `tinycolormap.cuh` instead of `.hpp` file
+```cpp
+#include "tinycolormap.cuh"
+```
+Other usage is the same as the way shown above.
+
+
 ## Tools (Optional)
 
 This repository includes the following optional tools:
